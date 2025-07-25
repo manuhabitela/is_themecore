@@ -97,6 +97,15 @@ class GeneralType extends TranslatorAwareType
                     'required' => false,
                     'label' => $this->trans('Cloudflare zone', 'Modules.isthemecore.Admin'),
                 ]
+            )
+            ->add(
+                'collab_category_id',
+                TextType::class,
+                [
+                    'required' => false,
+                    'label' => $this->trans('Collaboration category ID', 'Modules.isthemecore.Admin'),
+                    'help' => $this->trans('Products from this category will be displayed with the collab image', 'Modules.isthemecore.Admin'),
+                ]
             );
     }
 

@@ -22,6 +22,7 @@ final class GeneralConfiguration extends AbstractMultistoreConfiguration
     public const THEMECORE_USE_CLOUDFLARE_IMAGES = 'THEMECORE_USE_CLOUDFLARE_IMAGES';
     public const THEMECORE_CLOUDFLARE_RESIZED_IMAGES = 'THEMECORE_CLOUDFLARE_RESIZED_IMAGES';
     public const THEMECORE_CLOUDFLARE_ZONE = 'THEMECORE_CLOUDFLARE_ZONE';
+    public const THEMECORE_COLLAB_CATEGORY_ID = 'THEMECORE_COLLAB_CATEGORY_ID';
 
     /**
      * @var array<string, string>
@@ -33,6 +34,7 @@ final class GeneralConfiguration extends AbstractMultistoreConfiguration
         'cloudflare_images' => self::THEMECORE_USE_CLOUDFLARE_IMAGES,
         'cloudflare_resized_images' => self::THEMECORE_CLOUDFLARE_RESIZED_IMAGES,
         'cloudflare_zone' => self::THEMECORE_CLOUDFLARE_ZONE,
+        'collab_category_id' => self::THEMECORE_COLLAB_CATEGORY_ID,
     ];
 
     /**
