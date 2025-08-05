@@ -151,7 +151,7 @@ class SmartyHelperFunctions {
                 $node->removeAttribute('height');
                 $imgUrlParams['image']['bySize']['auto']['width'] = $maxWidth;
             }
-            if (!empty($width) && !empty($height)) {
+            if (!empty($width) && !empty($height) && is_numeric($width) && is_numeric($height)) {
                 $ratio = $width / $height;
                 $newWidth = min($width, $maxWidth);
                 $newHeight = intval($newWidth / $ratio);
