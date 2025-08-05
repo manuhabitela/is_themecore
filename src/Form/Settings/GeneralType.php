@@ -99,6 +99,15 @@ class GeneralType extends TranslatorAwareType
                 ]
             )
             ->add(
+                'collection_feature_id',
+                TextType::class,
+                [
+                    'required' => false,
+                    'label' => $this->trans('Collection feature ID', 'Modules.isthemecore.Admin'),
+                    'help' => $this->trans('This feature will be used to display products of the same collection on the product page', 'Modules.isthemecore.Admin'),
+                ]
+            )
+            ->add(
                 'collab_category_id',
                 TextType::class,
                 [
