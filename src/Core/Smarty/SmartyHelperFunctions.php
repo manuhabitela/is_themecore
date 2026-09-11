@@ -43,6 +43,11 @@ class SmartyHelperFunctions {
             ];
         }
 
+        if (empty($params['generateSizeAttrs']) || $params['generateSizeAttrs'] === false) {
+            unset($attributes['width']);
+            unset($attributes['height']);
+        }
+
         foreach ($attributes as $attr => $value) {
             $attributesToPrint[] = $attr . '="' . $value . '"';
         }
